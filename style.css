@@ -1,0 +1,274 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, section, footer {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff; /* For hero banner */
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: #333; /* Placeholder background color */
+    /* In a real scenario, you'd use a background image or video */
+    /* background-image: url('path/to/your/hero-image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-banner .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-banner .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.cta-button.secondary {
+    background-color: #6c757d;
+}
+
+.cta-button.secondary:hover {
+    background-color: #545b62;
+}
+
+
+/* Introduction/Hook */
+.introduction-hook {
+    text-align: center;
+}
+
+/* Why Choose Us - Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.benefit-cluster {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.benefit-cluster h3 {
+    color: #007bff;
+}
+
+/* Image Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.gallery-item p {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Transform Your Space */
+.transform-your-space .visual-placeholder img {
+    margin-top: 15px;
+}
+
+/* Technical Specifications */
+.technical-specifications table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.technical-specifications td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.technical-specifications td:first-child {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    width: 30%;
+}
+
+/* Customization Process */
+.customization-process ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.customization-process li {
+    margin-bottom: 5px;
+}
+
+.visual-placeholder-infographic p {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* Testimonials */
+.testimonial-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.testimonial-item blockquote {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.testimonial-item cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+}
+
+/* FAQ */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item p:first-child { /* The Question */
+    font-weight: bold;
+}
+
+/* Final CTA */
+.final-cta {
+    text-align: center;
+}
+
+.final-cta .cta-button {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 0; /* Full width footer */
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #00aaff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.brand-message {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px !important;
+}
+
+/* Responsive adjustments (basic example) */
+@media (max-width: 768px) {
+    h1, .hero-banner .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-banner .hero-content p {
+        font-size: 1em;
+    }
+
+    .benefits-grid, .gallery-grid {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+    }
+}
